@@ -1,79 +1,83 @@
-## Spiegazione
+# Esercizi Java Collection Framework
 
-Una serie di esercizi per consolidare le mie conoscenze sul Java Framework Collection:
+Questa serie di esercizi serve a consolidare la conoscenza delle collezioni in Java, coprendo Set, List, Map, Autoboxing/Unboxing e Iterator.
 
-## Esercizi su Set (HashSet, LinkedHashSet, TreeSet)
+---
 
-### Esercizio 1: Operazioni di base con HashSet
+## Set (HashSet, LinkedHashSet, TreeSet)
 
-Crea un HashSet<String> e aggiungi almeno 5 nomi di città.
-Stampa il set per verificare l’ordine degli elementi.
-Controlla se un determinato elemento è presente.
-Rimuovi un elemento e verifica che sia stato eliminato.
-Itera sugli elementi con un Iterator.
+**Esercizio 1: HashSet**
+- Crea un `HashSet` con almeno 5 nomi di città.
+- Stampa il set e osserva l’ordine (non garantito).
+- Controlla se un elemento esiste.
+- Rimuovi un elemento e verifica.
+- Itera con un `Iterator`.
 
-### Esercizio 2: LinkedHashSet e l’ordine di inserimento
+**Esercizio 2: LinkedHashSet**
+- Crea un `LinkedHashSet` con numeri 10, 5, 30, 20, 15.
+- Stampa il set e verifica che mantenga l’ordine di inserimento.
+- Aggiungi un numero già presente e osserva il comportamento.
 
-Crea un LinkedHashSet<Integer> e inserisci i numeri 10, 5, 30, 20, 15.
-Stampa il set e osserva l’ordine.
-Aggiungi un numero già presente e verifica il comportamento.
+**Esercizio 3: TreeSet**
+- Crea un `TreeSet` con numeri decimali.
+- Stampa il set e verifica l’ordinamento naturale.
+- Usa i metodi `first()`, `last()`, `higher()`, `lower()` per esplorare gli elementi.
 
-### Esercizio 3: TreeSet e ordinamento naturale
+---
 
-Crea un TreeSet<Double> e aggiungi alcuni numeri decimali.
-Stampa il set e osserva l’ordinamento automatico.
-Usa i metodi first(), last(), higher(), lower() per esplorare gli elementi.
+## List (ArrayList, LinkedList)
 
-## Esercizi su List (ArrayList, LinkedList)
+**Esercizio 4: ArrayList**
+- Crea un `ArrayList` con 5 nomi di frutta.
+- Ordina la lista con `Collections.sort()`.
+- Rimuovi un elemento e stampa la lista.
+- Itera con un ciclo `for` e con un `Iterator`.
 
-### Esercizio 4: Uso di ArrayList
+**Esercizio 5: LinkedList**
+- Crea una `LinkedList` con 5 numeri.
+- Usa `addFirst()` e `addLast()` per aggiungere elementi in testa e coda.
+- Usa `removeFirst()` e `removeLast()` per rimuovere elementi.
+- Recupera primo e ultimo elemento con `getFirst()` e `getLast()`.
 
-Crea un ArrayList<String> e aggiungi 5 nomi di frutta.
-Ordina la lista con Collections.sort().
-Rimuovi un elemento e stampa il risultato.
-Itera sugli elementi con un ciclo for e un Iterator.
+---
 
-### Esercizio 5: LinkedList e operazioni tipiche
+## Map (HashMap, LinkedHashMap, TreeMap)
 
-Crea una LinkedList<Integer> e aggiungi 5 numeri.
-Usa i metodi addFirst() e addLast() per aggiungere numeri in testa e in coda.
-Usa removeFirst() e removeLast() per rimuovere elementi.
-Ottieni il primo e l’ultimo elemento con getFirst() e getLast().
+**Esercizio 6: HashMap**
+- Crea un `HashMap<String, Integer>` con nomi studenti e voti.
+- Aggiungi almeno 5 coppie chiave-valore.
+- Controlla la presenza di una chiave.
+- Stampa tutte le chiavi e tutti i valori.
+- Scorri la mappa con un `Iterator`.
 
-## Esercizi su Map (HashMap, LinkedHashMap, TreeMap)
+**Esercizio 7: LinkedHashMap**
+- Crea un `LinkedHashMap<String, String>` con paesi e capitali.
+- Aggiungi almeno 5 coppie.
+- Stampa la mappa mantenendo l’ordine di inserimento.
+- Aggiungi una coppia già presente e osserva cosa succede.
 
-### Esercizio 6: HashMap per memorizzare valori
+**Esercizio 8: TreeMap**
+- Crea un `TreeMap<Integer, String>` con ID prodotto e nome prodotto.
+- Aggiungi almeno 5 elementi.
+- Stampa la mappa e verifica l’ordinamento automatico.
+- Usa `firstEntry()` e `lastEntry()` per ottenere primo e ultimo elemento.
 
-Crea un HashMap<String, Integer> per memorizzare nomi di studenti e i loro voti.
-Aggiungi almeno 5 coppie chiave-valore.
-Controlla se una chiave specifica è presente.
-Stampa tutte le chiavi e tutti i valori separatamente.
-Usa un Iterator per scorrere gli elementi.
+---
 
-### Esercizio 7: LinkedHashMap e mantenimento dell’ordine
+## Autoboxing e Unboxing
 
-Crea un LinkedHashMap<String, String> per memorizzare coppie di paesi e capitali.
-Inserisci almeno 5 coppie e stampa la mappa.
-Aggiungi una nuova coppia già presente e osserva il comportamento.
+**Esercizio 9: Integer**
+- Dichiara una variabile `int` e assegna un valore.
+- Dimostra l’autoboxing in un oggetto `Integer`.
+- Estrai il valore primitivo da un `Integer` (unboxing).
 
-### Esercizio 8: TreeMap e ordinamento delle chiavi
+---
 
-Crea un TreeMap<Integer, String> per memorizzare ID di prodotti e nomi di prodotti.
-Aggiungi almeno 5 elementi e stampa la mappa per verificare l’ordinamento automatico.
-Usa firstEntry() e lastEntry() per ottenere il primo e l’ultimo elemento.
+## Iterator
 
-## Esercizi su Autoboxing e Unboxing
+**Esercizio 10: Iterator con ArrayList**
+- Crea un `ArrayList` con 5 nomi di animali.
+- Usa un `Iterator` per stampare gli elementi.
+- Usa l’`Iterator` per rimuovere un elemento specifico.
 
-### Esercizio 9: Autoboxing e Unboxing con Integer
-
-Dichiarare una variabile di tipo int e assegnargli un valore.
-Convertire automaticamente il valore in un oggetto Integer (autoboxing).
-Estrai il valore primitivo da un oggetto Integer (unboxing).
-
-## Esercizi su Iterator
-
-### Esercizio 10: Uso di Iterator con ArrayList
-
-Crea un ArrayList<String> e inserisci 5 nomi di animali.
-Usa un Iterator per scorrere la lista e stampare gli elementi.
-Usa l’Iterator per rimuovere un elemento specifico.
+---
